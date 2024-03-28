@@ -10,7 +10,7 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am{" "}
             <span className="purple">Sree Prudhvi Bharadwaj </span>
-            from <span className="purple"> United States, India.</span>
+            from <span className="purple"> United States.</span>
             <br />
             <br />
             I have completed my Master's in Computer Science.
