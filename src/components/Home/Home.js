@@ -6,7 +6,7 @@ import Home2 from "./Home2";
 import Type from "./Type";
 import ReactGA from "react-ga4";
 
-ReactGA.initialize("G-3QG7Z1XH3K");
+ReactGA.initialize("G-ZQSHP502GJ");
 function Home() {
   const Name = "Sree Prudhvi Bharadwaj Jampana";
   return (
