@@ -58,7 +58,7 @@ function Projects() {
               isBlog={false}
               title="Git Insights"
               description="The GitHub User Analytics Dashboard is a web application that allows users to search for GitHub users and visualize their data using various charts like pie charts and bar charts."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              ghLink="https://github.com/prudhvij15/Github-insights"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
