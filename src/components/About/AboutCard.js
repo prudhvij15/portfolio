@@ -1,7 +1,9 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
+import ProjectCards from "../Projects/ProjectCards";
 
+import { Container, Row, Col } from "react-bootstrap";
 function AboutCard() {
   return (
     <Card className="quote-card-view">
@@ -36,6 +38,23 @@ function AboutCard() {
           <footer className="blockquote-footer">Prudhvi</footer>
         </blockquote>
       </Card.Body>
+      {/* <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={9} className="project-card">
+          <ProjectCards
+            imgPath={crypto}
+            isBlog={false}
+            title="Cryptocatalog"
+            description="I developed a cryptocurrency data
+            aggregator application using React.js, Tailwind. This application
+            fetches real-time data for various cryptocurrencies and displays it
+            in an intuitive user interface. Additionally, I integrated real-time
+            charts to provide users with visual insights into cryptocurrency
+            trends."
+            ghLink="https://github.com/prudhvij15/crypto-tracker"
+            demoLink="https://cryptocatalog.netlify.app/"
+          />
+        </Col>
+      </Row> */}
     </Card>
   );
 }

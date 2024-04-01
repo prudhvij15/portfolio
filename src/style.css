@@ -87,6 +87,35 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
+ 
+} 
+.navbar a {
+  
+  text-decoration: none;
+ 
+}
+
+.logo {
+  display: block;
+  flex: none;
+  float: left;
+  font-weight: bold;
+  font-size:1.7rem;
+  text-decoration: none;
+  margin-top: 10px;
+  line-height: normal;
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+}
+
+
+.logo-name {
+  font-family: "Agustina Regular";
+  font-weight: bold;
+  font-variant-ligatures: no-common-ligatures;
+  -webkit-font-variant-ligatures: no-common-ligatures;
+  padding: 0 10px;
 }
 
 .navbar-toggler {
