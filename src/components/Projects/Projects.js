@@ -6,7 +6,7 @@ import crypto from "../../Assets/Projects/cryptocataglo.png";
 import cinelist from "../../Assets/Projects/cinelist.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
-
+import git from "../../Assets/Projects/git.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -54,7 +54,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath=""
+              imgPath={git}
               isBlog={false}
               title="Git Insights"
               description="The GitHub User Analytics Dashboard is a web application that allows users to search for GitHub users and visualize their data using various charts like pie charts and bar charts."
