@@ -38,7 +38,7 @@ function NavBar() {
       label: "Downloaded",
     });
     window.open(
-      "https://my-personal-resume01.s3.us-east-2.amazonaws.com/Prudhvi.pdf",
+      "https://perosnalmyresume.s3.us-east-2.amazonaws.com/Prudhvi.pdf",
       "_blank"
     );
   };
