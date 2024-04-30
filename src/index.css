@@ -7,7 +7,6 @@ body {
   background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
 }
 
-
 @font-face {
   font-family: "Agustina Regular";
   font-style: normal;
@@ -22,4 +21,3 @@ body {
     url("../src/Assets/fonts/Montserrat-Regular.ttf") format("woff");
   font-display: swap;
 }
-
