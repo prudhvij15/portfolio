@@ -1,33 +1,27 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-  AiFillMail,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillMail } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
   return (
-    <Container fluid className="footer">
+    <Container fluid className="footer text-center">
+      {" "}
+      {/* Added 'text-center' class for center alignment */}
       <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Prudhvi.</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} </h3>
-        </Col>
         <Col md="4" className="footer-body">
-          <ul className="footer-icons">
+          {" "}
+          <h1>FIND ME ON</h1>
+          <p>
+            Feel free to <span className="purple">connect </span>with me
+          </p>
+          <ul className="home-about-social-links">
             <li className="social-icons">
               <a
                 href="https://github.com/Prudhvij15"
-                style={{ color: "white" }}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noreferrer"
+                className="icon-colour  home-social-icons"
               >
                 <AiFillGithub />
               </a>
@@ -35,9 +29,9 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="mailto:jampanaprudhvi2@gmail.com"
-                style={{ color: "white" }}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noreferrer"
+                className="icon-colour  home-social-icons"
               >
                 <AiFillMail />
               </a>
@@ -45,9 +39,9 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/prudhvi-jampana/"
-                style={{ color: "white" }}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noreferrer"
+                className="icon-colour  home-social-icons"
               >
                 <FaLinkedinIn />
               </a>

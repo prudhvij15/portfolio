@@ -1,5 +1,5 @@
 html {
-  --section-background-color: linear-gradient(
+  --section-background-color: blacklinear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.582),
     rgba(12, 8, 24, 0.904)
@@ -87,12 +87,9 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
- 
-} 
+}
 .navbar a {
-  
   text-decoration: none;
- 
 }
 
 .logo {
@@ -100,7 +97,7 @@ button:focus {
   flex: none;
   float: left;
   font-weight: bold;
-  font-size:1.7rem;
+  font-size: 1.7rem;
   text-decoration: none;
   margin-top: 10px;
   line-height: normal;
@@ -108,7 +105,6 @@ button:focus {
     font-size: 1.2rem;
   }
 }
-
 
 .logo-name {
   font-family: "Agustina Regular";
@@ -271,6 +267,9 @@ button:focus {
     transform: rotate(0deg);
   }
 }
+body {
+  font-family: Montserrat, sans-serif;
+}
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -286,7 +285,8 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
+  background-color: #171c28;
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -350,6 +350,7 @@ button:focus {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
+  background-color: #171c28;
 }
 
 .home-about-description {
@@ -436,26 +437,14 @@ button:focus {
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
 }
-.footer-copywright {
-  text-align: center !important;
-}
 
 .footer-body {
   z-index: 1;
   text-align: center !important;
+  margin: auto;
 }
 
-@media (max-width: 767px) {
-  .footer-copywright {
-    text-align: center !important;
-  }
-
-  .footer-body {
-    text-align: center !important;
-  }
-}
-
-.footer h3 {
+.footer {
   font-size: 1em;
   color: white !important;
   margin-top: 0.5em !important;
@@ -467,9 +456,9 @@ button:focus {
   padding: 0 !important;
 }
 
-.blockquote-footer {
+/* .blockquote-footer {
   color: #a588c0 !important;
-}
+} */
 /* --------- */
 /* Projects */
 /* --------- */
@@ -477,7 +466,8 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  /* background-image: var(--section-background-color) !important; */
+  background-color: #171c28;
 }
 
 .project-card {
@@ -575,7 +565,9 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  //background-image: var(--section-background-color) !important;
+  background-color: #171c28;
+  /* change it bg color */
   color: white !important;
 }
 
@@ -584,7 +576,7 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1.7px solid !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;

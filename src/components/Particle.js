@@ -18,9 +18,13 @@ function Particle() {
             enable: false,
             opacity: 0.03,
           },
+
           move: {
             direction: "right",
             speed: 0.05,
+          },
+          shape: {
+            type: "star",
           },
           size: {
             value: 1,

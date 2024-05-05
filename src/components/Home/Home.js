@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 import ReactGA from "react-ga4";
+import About from "../About/About";
 
 ReactGA.initialize("G-ZQSHP502GJ");
 function Home() {
@@ -44,6 +45,9 @@ function Home() {
           </Row>
         </Container>
       </Container>
+
+      <About />
+
       <Home2 />
     </section>
   );

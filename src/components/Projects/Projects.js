@@ -4,13 +4,12 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import crypto from "../../Assets/Projects/cryptocataglo.png";
 import cinelist from "../../Assets/Projects/cinelist.png";
-import suicide from "../../Assets/Projects/suicide.png";
+import imgtxt from "../../Assets/Projects/imgtext.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import git from "../../Assets/Projects/git.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
       <Container>
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
@@ -43,6 +42,19 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={imgtxt}
+              isBlog={false}
+              title="AI-Enhanced Media Description System"
+              description="Developed a media analysis tool with seamless integration to OpenAI, enabling users to upload images and videos for comprehensive analysis. 
+              The tool extracts insights from media content, empowering users with valuable information derived from advanced AI algorithms securely storing files in AWS S3.
+              "
+              ghLink="https://github.com/prudhvij15/image2TextAI"
+              //demoLink="https://github.com/prudhvij15/image2TextAI"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={cinelist}
               isBlog={false}
               title="Cine-list"
@@ -62,18 +74,6 @@ function Projects() {
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
-
-          {/* <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here
-            />
-          </Col> */}
         </Row>
       </Container>
     </Container>
