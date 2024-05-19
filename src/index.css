@@ -21,3 +21,7 @@ body {
     url("../src/Assets/fonts/Montserrat-Regular.ttf") format("woff");
   font-display: swap;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

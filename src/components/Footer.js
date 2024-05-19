@@ -6,44 +6,41 @@ import { FaLinkedinIn } from "react-icons/fa";
 function Footer() {
   return (
     <Container fluid className="footer text-center">
-      {" "}
-      {/* Added 'text-center' class for center alignment */}
       <Row>
         <Col md="4" className="footer-body">
-          {" "}
           <h1>FIND ME ON</h1>
           <p>
             Feel free to <span className="purple">connect </span>with me
           </p>
-          <ul className="home-about-social-links">
-            <li className="social-icons">
+          <ul className="flex justify-center p-0">
+            <li className="mr-4">
               <a
                 href="https://github.com/Prudhvij15"
                 target="_blank"
                 rel="noreferrer"
-                className="icon-colour  home-social-icons"
+                className="icon-colour flex items-center justify-center w-12 h-12 bg-gray-800 rounded-full hover:bg-indigo-600"
               >
-                <AiFillGithub />
+                <AiFillGithub className="text-white text-lg" />
               </a>
             </li>
-            <li className="social-icons">
+            <li className="mr-4">
               <a
                 href="mailto:jampanaprudhvi2@gmail.com"
                 target="_blank"
                 rel="noreferrer"
-                className="icon-colour  home-social-icons"
+                className="icon-colour flex items-center justify-center w-12 h-12 bg-gray-800 rounded-full hover:bg-indigo-600"
               >
-                <AiFillMail />
+                <AiFillMail className="text-white text-lg" />
               </a>
             </li>
-            <li className="social-icons">
+            <li>
               <a
                 href="https://www.linkedin.com/in/prudhvi-jampana/"
                 target="_blank"
                 rel="noreferrer"
-                className="icon-colour  home-social-icons"
+                className="icon-colour flex items-center justify-center w-12 h-12 bg-gray-800 rounded-full hover:bg-indigo-600"
               >
-                <FaLinkedinIn />
+                <FaLinkedinIn className="text-white text-lg" />
               </a>
             </li>
           </ul>

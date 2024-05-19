@@ -13,28 +13,35 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
+        <div className="flex flex-wrap justify-center gap-2 ">
           <Button
             variant="primary"
-            href={props.demoLink}
+            href={props.ghLink}
             target="_blank"
-            style={{ marginLeft: "10px" }}
+            className="flex items-center py-2 px-4 bg-blue-500 hover:bg-blue-600 text-white rounded-lg"
           >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <BsGithub className="mr-2" />
+              {props.isBlog ? "Blog" : "GitHub"}
+            </div>
           </Button>
-        )}
+          {!props.isBlog && props.demoLink && (
+            <Button
+              variant="primary"
+              href={props.ghLink}
+              target="_blank"
+              className="flex items-center py-2 px-4 bg-blue-500 hover:bg-blue-600 text-white rounded-lg"
+            >
+              <div style={{ display: "flex", flexDirection: "row" }}>
+                <CgWebsite className="mr-2" />
+                {"Demo"}
+              </div>
+            </Button>
+          )}
+        </div>
       </Card.Body>
     </Card>
   );
 }
+
 export default ProjectCards;

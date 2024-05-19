@@ -11,7 +11,9 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #c770f0;
+  /* --imp-text-color: #c770f0; */
+
+  --imp-text-color: grey;
 }
 
 .purple {
@@ -295,28 +297,31 @@ body {
 
 .home-content {
   padding: 9rem 0 2rem !important;
-  color: whitesmoke;
+  color: white;
   text-align: left;
 }
 
 .heading {
-  font-size: 2.4em !important;
+  font-size: 1.4em !important;
   padding-left: 50px !important;
 }
 
 .heading-name {
-  font-size: 2.5em !important;
+  font-size: 1.9em !important;
   padding-left: 45px !important;
 }
 
 .main-name {
-  color: #cd5ff8;
+  /* color: #cd5ff8; */
+
+  color: whitesmoke;
+  font-family: "Montserrat";
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
   color: #be6adf !important;
-  font-weight: 600 !important;
+  font-weight: 00 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
@@ -490,6 +495,7 @@ body {
   transform: scale(1.02) !important;
   overflow: hidden !important;
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  /* box-shadow: 0 4px 4px 5px rgba(25, 29, 30, 0.8) !important; */
 }
 
 .blog-card {

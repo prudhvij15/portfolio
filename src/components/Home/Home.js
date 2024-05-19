@@ -3,11 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
-import Type from "./Type";
 import ReactGA from "react-ga4";
 import About from "../About/About";
 
 ReactGA.initialize("G-ZQSHP502GJ");
+
 function Home() {
   const Name = "Sree Prudhvi Bharadwaj Jampana";
   return (
@@ -17,20 +17,20 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
-              </h1>
-
-              <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> {Name}</strong>
-              </h1>
-
-              <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
+              <div className="text-left">
+                <h1 className="m-0 text-white text-3xl leading-tight ">
+                  Hi all, I'm {Name} 👋
+                  {/* <span className="wave" role="img" aria-labelledby="wave">
+                    👋🏻
+                  </span> */}
+                </h1>
+                <></>
+                <p className="m-0 text-white text-2xl leading-10 mt-3">
+                  A passionate Full Stack Software Developer 🚀 having an
+                  experience of building Web and Mobile applications with
+                  JavaScript / Reactjs / Nodejs / React Native and some other
+                  cool libraries and frameworks.
+                </p>
               </div>
             </Col>
 
@@ -47,8 +47,7 @@ function Home() {
       </Container>
 
       <About />
-
-      <Home2 />
+      {/* <Home2 /> */}
     </section>
   );
 }

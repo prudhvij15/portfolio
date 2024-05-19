@@ -12,7 +12,6 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -29,7 +28,6 @@ function NavBar() {
 
   window.addEventListener("scroll", scrollHandler);
   const handleResumeClick = () => {
-    // Send event to Google Analytics
     ReactGA.event({
       action: "resume_download",
       category: "Resume",
@@ -50,18 +48,14 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
           <a href="/" className="logo">
             <span className="grey-color">&lt; </span>
-            <span
-              className="logo-name"
-              style={{ whiteSpace: "nowrap", color: "white" }}
-            >
+            <span className="logo-name" style={{ color: "white" }}>
               Sree Prudhvi Jampana
             </span>
             <span> &gt; </span>
           </a>
-        </Navbar.Brand>{" "}
+        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -74,53 +68,27 @@ function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/"
-                onClick={() => updateExpanded(false)}
-                className="dark:text-black"
-              >
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-              </Nav.Link>
-            </Nav.Item>
-
-            {/* <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
-            </Nav.Item> */}
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/"
-                onClick={() => {
-                  updateExpanded(false);
-                  handleResumeClick();
-                }}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
-
+            <NavItemWithIcon
+              icon={<AiOutlineHome />}
+              text="Home"
+              to="/"
+              onClick={() => updateExpanded(false)}
+            />
+            <NavItemWithIcon
+              icon={<AiOutlineFundProjectionScreen />}
+              text="Projects"
+              to="/project"
+              onClick={() => updateExpanded(false)}
+            />
+            <NavItemWithIcon
+              icon={<CgFileDocument />}
+              text="Resume"
+              to="/"
+              onClick={() => {
+                updateExpanded(false);
+                handleResumeClick();
+              }}
+            />
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/prudhvij15"
@@ -137,5 +105,24 @@ function NavBar() {
     </Navbar>
   );
 }
+
+// Custom NavItem component to render an icon and text together
+const NavItemWithIcon = ({ icon, text, to, onClick }) => {
+  return (
+    <Nav.Item>
+      <Nav.Link
+        as={Link}
+        to={to}
+        onClick={onClick}
+        className="dark:text-black flex items-center"
+      >
+        <div className="flex items-center">
+          {icon}
+          <span className="ml-2">{text}</span>
+        </div>
+      </Nav.Link>
+    </Nav.Item>
+  );
+};
 
 export default NavBar;

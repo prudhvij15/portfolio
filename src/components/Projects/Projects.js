@@ -7,6 +7,7 @@ import cinelist from "../../Assets/Projects/cinelist.png";
 import imgtxt from "../../Assets/Projects/imgtext.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import git from "../../Assets/Projects/git.png";
+import File from "../../Assets/Projects/FileHandler.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -31,12 +32,12 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={File}
               isBlog={false}
-              title="Mailchimp Events API"
-              description="Developed a streamlined integration between a React.js frontend and an Express.js backend to facilitate the posting of events to the Mailchimp Events API. This integration enables seamless communication and data transmission between applications."
-              ghLink="https://github.com/prudhvij15/mailchimp-event-api"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="File Uploading App with S3 Integration"
+              description="This application streamlines the process of file uploading by seamlessly integrating with Amazon S3 and CloudFront. Users can securely upload files, which are then efficiently distributed globally through CloudFront's content delivery network."
+              ghLink="https://github.com/prudhvij15/file-sharing"
+              // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
@@ -49,7 +50,16 @@ function Projects() {
               The tool extracts insights from media content, empowering users with valuable information derived from advanced AI algorithms securely storing files in AWS S3.
               "
               ghLink="https://github.com/prudhvij15/image2TextAI"
-              //demoLink="https://github.com/prudhvij15/image2TextAI"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bitsOfCode}
+              isBlog={false}
+              title="Mailchimp Events API"
+              description="Developed a streamlined integration between a React.js frontend and an Express.js backend to facilitate the posting of events to the Mailchimp Events API. This integration enables seamless communication and data transmission between applications."
+              ghLink="https://github.com/prudhvij15/mailchimp-event-api"
             />
           </Col>
 
