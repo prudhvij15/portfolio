@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
 import crypto from "../../Assets/Projects/cryptocataglo.png";
 import cinelist from "../../Assets/Projects/cinelist.png";
 import imgtxt from "../../Assets/Projects/imgtext.png";
