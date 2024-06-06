@@ -17,7 +17,7 @@ function Home() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-7/12 mt-32">
               <div className="text-left">
-                <h1 className="text-white text-3xl md:text-4xl font-bold">
+                <h1 className="text-white text-2xl md:text-3xl font-semibold">
                   Hi all, I'm {Name} 👋
                 </h1>
                 <p className="text-white text-xl md:text-2xl mt-4">
