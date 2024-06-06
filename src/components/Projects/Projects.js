@@ -6,7 +6,7 @@ import cinelist from "../../Assets/Projects/cinelist.png";
 import imgtxt from "../../Assets/Projects/imgtext.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import git from "../../Assets/Projects/git.png";
-import File from "../../Assets/Projects/image.png";
+import File from "../../Assets/image.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
