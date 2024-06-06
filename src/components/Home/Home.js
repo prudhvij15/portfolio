@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
@@ -11,40 +10,35 @@ ReactGA.initialize("G-ZQSHP502GJ");
 function Home() {
   const Name = "Sree Prudhvi Bharadwaj Jampana";
   return (
-    <section>
-      <Container fluid className="home-section" id="home">
+    <section className="overflow-x-hidden">
+      <div className="w-full h-full bg-gray-900" id="home">
         <Particle />
-        <Container className="home-content">
-          <Row>
-            <Col md={7} className="home-header">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="md:w-7/12 mt-32">
               <div className="text-left">
-                <h1 className="m-0 text-white text-3xl leading-tight ">
+                <h1 className="text-white text-3xl md:text-4xl font-bold">
                   Hi all, I'm {Name} 👋
-                  {/* <span className="wave" role="img" aria-labelledby="wave">
-                    👋🏻
-                  </span> */}
                 </h1>
-                <></>
-                <p className="m-0 text-white text-2xl leading-10 mt-3">
+                <p className="text-white text-xl md:text-2xl mt-4">
                   A passionate Full Stack Software Developer 🚀 having an
                   experience of building Web and Mobile applications with
                   JavaScript / Reactjs / Nodejs / React Native and some other
                   cool libraries and frameworks.
                 </p>
               </div>
-            </Col>
+            </div>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <div className="md:w-5/12 mt-8 md:mt-0">
               <img
                 src={homeLogo}
                 alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                className="w-full max-w-sm mx-auto"
               />
-            </Col>
-          </Row>
-        </Container>
-      </Container>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <About />
       {/* <Home2 /> */}
