@@ -7,7 +7,7 @@ import cinelist from "../../Assets/Projects/cinelist.png";
 import imgtxt from "../../Assets/Projects/imgtext.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import git from "../../Assets/Projects/git.png";
-import File from "../../Assets/Projects/FileHandler.png";
+import File from "../../Assets/Projects/image.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -35,7 +35,7 @@ function Projects() {
               imgPath={File}
               isBlog={false}
               title="File Uploading App with S3 Integration"
-              description="This application streamlines the process of file uploading by seamlessly integrating with Amazon S3 and CloudFront. Users can securely upload files, which are then efficiently distributed globally through CloudFront's content delivery network."
+              description="This application streamlines the process of file uploading by seamlessly integrating with Amazon S3 and CloudFront. Users can securely upload files, which are then efficiently distributed globally through CloudFront's content delivery network. Additionally, the application is capable of generating thumbnails for uploaded images, enhancing the user experience by providing quick previews."
               ghLink="https://github.com/prudhvij15/file-sharing"
               // demoLink="https://blogs.soumya-jit.tech/"
             />

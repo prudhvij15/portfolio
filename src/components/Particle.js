@@ -5,10 +5,11 @@ function Particle() {
   return (
     <Particles
       id="tsparticles"
+      style={{ position: "absolute", top: 0, left: 0, zIndex: -1 }}
       params={{
         particles: {
           number: {
-            value: 160,
+            value: 30,
             density: {
               enable: true,
               value_area: 1500,

@@ -84,14 +84,30 @@ button:focus {
   backdrop-filter: blur(15px) !important;
 }
 
-.navbar {
+/* .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
-}
+ 
+} */
 .navbar a {
   text-decoration: none;
+}
+
+/* Add this to your CSS file */
+.navbar {
+  z-index: 1030; /* Default z-index for Bootstrap navbar */
+  transition: z-index 0.3s;
+}
+
+.navbar-behind-modal {
+  z-index: 40; /* Lower z-index to place it behind the modal */
+}
+
+/* Ensure the modal has a higher z-index */
+.modal {
+  z-index: 1050; /* Ensure the modal has a higher z-index than the navbar */
 }
 
 .logo {
