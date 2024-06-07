@@ -5,9 +5,9 @@ import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
+  AiOutlineMobile,
 } from "react-icons/ai";
 import { Button } from "react-bootstrap";
 
@@ -16,6 +16,7 @@ const NavBar = ({ iframeOpen }) => {
   const [navColour, updateNavbar] = useState(false);
   const [navbarClass, updateNavbarClass] = useState("navbar");
 
+  // Function to handle scrolling
   function scrollHandler() {
     if (window.scrollY >= 20) {
       updateNavbar(true);
@@ -24,7 +25,11 @@ const NavBar = ({ iframeOpen }) => {
     }
   }
 
-  window.addEventListener("scroll", scrollHandler);
+  // Add scroll event listener when component mounts
+  React.useEffect(() => {
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, []);
 
   // Update navbar class based on iframeOpen prop
   React.useEffect(() => {
@@ -70,6 +75,12 @@ const NavBar = ({ iframeOpen }) => {
               to="/project"
               onClick={() => updateExpanded(false)}
             />
+            <NavItemWithIcon
+              icon={<AiOutlineMobile />}
+              text="Mobile Apps"
+              to="/mobile-apps"
+              onClick={() => updateExpanded(false)}
+            />
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/prudhvij15"
@@ -77,7 +88,6 @@ const NavBar = ({ iframeOpen }) => {
                 className="fork-btn-inner"
               >
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
           </Nav>
@@ -87,6 +97,7 @@ const NavBar = ({ iframeOpen }) => {
   );
 };
 
+// Define NavItemWithIcon component
 const NavItemWithIcon = ({ icon, text, to, onClick }) => {
   return (
     <Nav.Item>

@@ -1,9 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
-import ProjectCards from "../Projects/ProjectCards";
 
-import { Container, Row, Col } from "react-bootstrap";
 function AboutCard() {
   return (
     <Card className="quote-card-view">
