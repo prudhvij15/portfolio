@@ -36,6 +36,15 @@ const NavBar = ({ iframeOpen }) => {
     updateNavbarClass(iframeOpen ? "navbar-behind-iframe" : "navbar");
   }, [iframeOpen]);
 
+  // Scroll to the certifications section
+  const scrollToCertifications = () => {
+    const certificationsSection = document.getElementById("certifications");
+    if (certificationsSection) {
+      certificationsSection.scrollIntoView({ behavior: "smooth" });
+    }
+    updateExpanded(false);
+  };
+
   return (
     <Navbar
       expanded={expand}
@@ -80,6 +89,12 @@ const NavBar = ({ iframeOpen }) => {
               text="Mobile Apps"
               to="/mobile-apps"
               onClick={() => updateExpanded(false)}
+            />
+            <NavItemWithIcon
+              icon={<AiOutlineHome />}
+              text="Certifications"
+              to="#certifications"
+              onClick={scrollToCertifications}
             />
             <Nav.Item className="fork-btn">
               <Button

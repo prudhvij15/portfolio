@@ -3,6 +3,7 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import ReactGA from "react-ga4";
 import About from "../About/About";
+import Certifications from "./Certifications";
 
 ReactGA.initialize("G-ZQSHP502GJ");
 
@@ -56,6 +57,7 @@ const Home = () => {
         </div>
 
         <About />
+        <Certifications />
         <Particle />
         {showResume && ( // Conditional rendering of iframe
           <div
