@@ -8,7 +8,7 @@ import Certifications from "./Certifications";
 ReactGA.initialize("G-ZQSHP502GJ");
 
 const Home = () => {
-  const Name = "Sree Prudhvi Bharadwaj Jampana";
+  const Name = " Bharadwaj Jampana";
   const [showResume, setShowResume] = useState(false);
 
   const handleOverlayClick = (e) => {
