@@ -57,7 +57,7 @@ const NavBar = ({ iframeOpen }) => {
           <a href="/" className="logo">
             <span className="grey-color">&lt; </span>
             <span className="logo-name" style={{ color: "white" }}>
-              Sree Prudhvi Jampana
+              Prudhvi J
             </span>
             <span> &gt; </span>
           </a>
