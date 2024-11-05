@@ -5,6 +5,10 @@ import ReactGA from "react-ga4";
 import About from "../About/About";
 import Certifications from "./Certifications";
 
+import { Container, Row, Col } from "react-bootstrap";
+import { AiFillGithub, AiFillMail } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+
 ReactGA.initialize("G-ZQSHP502GJ");
 
 const Home = () => {
@@ -35,14 +39,49 @@ const Home = () => {
                     cool libraries and frameworks.
                   </p>
                 </div>
-                <div className="text-left mt-8">
+                {/* <div className="text-left mt-8">
                   <button
                     className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
                     onClick={() => setShowResume(true)}
                   >
                     See My Resume
                   </button>
-                </div>
+                </div> */}
+
+                <ul className="flex  p-0">
+                  <li className="mr-4">
+                    <a
+                      href="https://github.com/Prudhvij15"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-colour flex items-center justify-center w-12 h-12 bg-git rounded-full hover:bg-git"
+                    >
+                      <AiFillGithub className="text-white text-2xl" />
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/prudhvi-jampana/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-colour flex items-center justify-center w-12 h-12 bg-linkedin rounded-full hover:bg-indigo-600"
+                    >
+                      <FaLinkedinIn className="text-white text-2xl" />
+                    </a>
+                  </li>
+
+                  <li className="ml-4">
+                    <a
+                      href="mailto:jampanaprudhvi2@gmail.com"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="icon-colour flex items-center justify-center w-12 h-12 bg-mail rounded-full hover:bg-mail"
+                    >
+                      <AiFillMail className="text-white text-2xl" />
+                    </a>
+                  </li>
+                </ul>
               </div>
 
               <div className="md:w-5/12 mt-8 md:mt-0">
@@ -59,6 +98,7 @@ const Home = () => {
         <About />
         <Certifications />
         <Particle />
+
         {showResume && ( // Conditional rendering of iframe
           <div
             id="overlay"
